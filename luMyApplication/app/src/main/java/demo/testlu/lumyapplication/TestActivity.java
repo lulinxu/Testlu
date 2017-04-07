@@ -10,11 +10,13 @@ import android.view.View;
  */
 
 public class TestActivity extends BaseActivity {
+    private int i;
     private View v;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.text_man);
+
         initView();
     }
     public void initView(){
@@ -26,6 +28,9 @@ public class TestActivity extends BaseActivity {
                         .setAction("Action", null).show();
             }
         });
+
+
+
     }
 
 
