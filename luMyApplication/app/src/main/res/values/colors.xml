@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryDark">#1085A0</color>
     <color name="colorAccent">#9b1046</color>
+    <color name="btn_login_normal">#1A8EA8</color>
+    <color name="btn_login_pressed">#3A8EA8</color>
+    <color name="btn_register_normal">#ffffff</color>
+    <color name="btn_register_pressed">#DDDDDD</color>
+
+
+
+    <color name="colorPrimaryFocus">#DD5055</color>
+    <color name="colorWindowBg">#FFFEFEFE</color>
+
 </resources>
