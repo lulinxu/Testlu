@@ -1,1 +1,1 @@
-include ':app', ':CommonLibrary', ':FlycoDialogLibrary', ':MaterialPtrLibrary', ':SwipeBackLibrary'
+include ':app', ':FlycoDialogLibrary', ':MaterialPtrLibrary', ':SwipeBackLibrary', ':CommonLibrary'

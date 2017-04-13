@@ -6,13 +6,11 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.jude.rollviewpager.RollPagerView;
 import com.jude.rollviewpager.adapter.StaticPagerAdapter;
@@ -23,7 +21,6 @@ import java.util.List;
 
 import demo.testlu.lumyapplication.Adapter.MyAdapter;
 import demo.testlu.lumyapplication.R;
-import demo.testlu.lumyapplication.utils.DividerItemDecoration;
 
 
 public class MainActivity extends BaseActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -99,32 +96,32 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
 //         mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.HORIZONTAL));
 
 //瀑布流
-        mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(5, StaggeredGridLayoutManager.VERTICAL));
+//        mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(5, StaggeredGridLayoutManager.VERTICAL));
+////
+//        mRecyclerView.removeItemDecoration(itemDecoration);
+
+//        /**第二步：添加分割线**/
+//        itemDecoration = new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST);
 //
-        mRecyclerView.removeItemDecoration(itemDecoration);
-
-        /**第二步：添加分割线**/
-        itemDecoration = new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST);
-
-        mRecyclerView.addItemDecoration(itemDecoration);
-        /**第三步：设置适配器**/
-        adapter = new MyAdapter(this, datas);
-        adapter.setType(3);
-        mRecyclerView.setAdapter(adapter);
-        adapter.setOnItemClickListener(new MyAdapter.OnItemClickListener() {
-            @Override
-            public void onItemClickListener(int position, Integer data) {
-                Toast.makeText(MainActivity.this, "点击了" + position, Toast.LENGTH_SHORT).show();
-
-            }
-
-        });
-        adapter.setOnItemlongClickListener(new MyAdapter.OnItemLongClickListener() {
-            @Override
-            public void onItemLongClick(int position, Integer integer) {
-                adapter.notifyItemRemoved(position);
-            }
-        });
+//        mRecyclerView.addItemDecoration(itemDecoration);
+//        /**第三步：设置适配器**/
+//        adapter = new MyAdapter(this, datas);
+//        adapter.setType(3);
+//        mRecyclerView.setAdapter(adapter);
+//        adapter.setOnItemClickListener(new MyAdapter.OnItemClickListener() {
+//            @Override
+//            public void onItemClickListener(int position, Integer data) {
+//                Toast.makeText(MainActivity.this, "点击了" + position, Toast.LENGTH_SHORT).show();
+//
+//            }
+//
+//        });
+//        adapter.setOnItemlongClickListener(new MyAdapter.OnItemLongClickListener() {
+//            @Override
+//            public void onItemLongClick(int position, Integer integer) {
+//                adapter.notifyItemRemoved(position);
+//            }
+//        });
 
 
 

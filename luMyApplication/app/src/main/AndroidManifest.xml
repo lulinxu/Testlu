@@ -19,7 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name="demo.testlu.lumyapplication.activity.Main"/>
         <activity android:name="demo.testlu.lumyapplication.activity.MainActivity"/>
         <activity android:name="demo.testlu.lumyapplication.activity.TestActivity"/>
     </application>

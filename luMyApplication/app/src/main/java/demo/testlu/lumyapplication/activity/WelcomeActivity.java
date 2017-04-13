@@ -49,7 +49,7 @@ public class WelcomeActivity extends BaseActivity {
             @Override
             public void onFinish() {
                 tvSkip.setText(String.format(getResources().getString(R.string.skip), 0));
-                startActivity(new Intent(mContext, MainActivity.class));
+                startActivity(new Intent(mContext, Main.class));
                 finish();
             }
         };
@@ -60,7 +60,6 @@ public class WelcomeActivity extends BaseActivity {
     public void skip() {
         if (timer != null)
             timer.cancel();
-
         startActivity(new Intent(mContext, MainActivity.class));
         finish();
     }
